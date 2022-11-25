@@ -12,7 +12,7 @@ function components({ message, userName, userImage, media }) {
       src={media.url}
     />;
   } else {
-    mediaDisplay = <video autoPlay muted style={imgStyle}>
+    mediaDisplay = <video autoPlay loop style={imgStyle}>
       <source src={media.url} type={media.content_type} />
     </video>;
   }

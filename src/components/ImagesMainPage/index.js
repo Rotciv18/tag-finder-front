@@ -17,9 +17,10 @@ class ImagesMainPage extends Component {
   }
 
   componentDidMount() {
+    this.getTweet();
     setInterval(() => {
       this.getTweet();
-    }, 5000);
+    }, 120000);
   }
 
   async getTweet() {
